@@ -44,3 +44,4 @@ class Dealer(User):
     def show_cards(self, num):
         print(self.hand.get_cards_str(num))
 
+#what do I need to do again?
