@@ -26,7 +26,8 @@ class Human(User):
         print(self.hand.get_cards_str())
 
     def place_bet(self, amount):
-        pass
+        print(f'you currently have ${self.account.get_balance()}')
+        input('how much do you want to place????????????    ')
 
 
 class Dealer(User):

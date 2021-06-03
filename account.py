@@ -17,8 +17,11 @@ class Account:
         if amount_to_withdraw > self.__balance:
             if not quiet:
                 print('You cannot withdraw more than you have!')
+            return None
+
         else:
             self.__balance -= amount_to_withdraw
+            return amount_to_withdraw
 
     # put money in
     def deposit(self, amount_to_deposit):
