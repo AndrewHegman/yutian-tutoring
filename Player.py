@@ -1,6 +1,6 @@
 from Hand import Hand
 from account import Account
-
+from Utils import safe_number_input
 
 class User:
     def __init__(self, user_name, account_balance: 0):
@@ -20,14 +20,15 @@ class Human(User):
 
     def hit_or_stand(self):
         print(f'Your current hand is {self.hand.value}')
-        return input('Do you want to hit(1) or stand(2)?')
+        return safe_number_input('Do you want to hit(1) or stand(2)?', [1, 2])
 
     def show_cards(self, num=None):
         print(self.hand.get_cards_str())
 
     def place_bet(self, amount):
         print(f'you currently have ${self.account.get_balance()}')
-        input('how much do you want to place????????????    ')
+        amount = safe_number_input('how much do you want to place????????????    ')
+        self.account.withdraw(amount)
 
 
 class Dealer(User):
