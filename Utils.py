@@ -27,6 +27,5 @@ def safe_number_input(prompt, valid_inputs=None, no_reprompt=False):
         if no_reprompt:
             break
         user_input = input(prompt)
+    return int(user_input) if user_input.isnumeric() else user_input
 
-
-safe_number_input('input: ', [1, 2, 3], no_reprompt=True)

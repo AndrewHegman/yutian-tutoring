@@ -13,7 +13,6 @@ class Account:
 
     # take money out
     def withdraw(self, amount_to_withdraw, quiet=True):
-
         if amount_to_withdraw > self.__balance:
             if not quiet:
                 print('You cannot withdraw more than you have!')
