@@ -9,6 +9,8 @@ deck = Deck()
 # Create a new User
 human = Human('JerryTNT')
 # Ask the user how much they want to bet
+# If the user tries to withdraw more money than they have, end the game immediately--we will improve this later
+
 bet = human.place_bet()
 # Draw two cards from the Deck and add to the user's hand (check the methods on the Deck class for help :) )
 
