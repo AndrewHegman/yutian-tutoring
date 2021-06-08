@@ -1,14 +1,13 @@
+from Deck import Deck
 from account import Account
 from Hand import Hand
 from cards import Card
-account = Account(0, 'Jerry')
-account.withdraw(10)
-print(account.get_balance())
+from Player import Human
 
 # Using the new Deck class, create a deck
-
+deck = Deck()
 # Create a new User
-
+human = Human('JerryTNT')
 # Ask the user how much they want to bet
 
 # Draw two cards from the Deck and add to the user's hand (check the methods on the Deck class for help :) )
