@@ -57,6 +57,3 @@ class Deck:
         if len(self.__deck) > 0:
             return self.__deck.pop()
         return None
-
-
-deck = Deck()
