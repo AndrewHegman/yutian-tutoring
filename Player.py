@@ -31,7 +31,7 @@ class Human(User):
 
     def place_bet(self):
         print(f'you currently have ${self.account.get_balance()}')
-        amount = safe_number_input('how much do you want to place????????????    ')
+        amount = safe_number_input('how much do you want to place?!?!?!?!?!?!    ')
         self.account.withdraw(amount)
 
     def add_card(self, card):
